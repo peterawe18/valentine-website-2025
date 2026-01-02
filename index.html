@@ -32,7 +32,7 @@
         <!-- First Question -->
         <div class="question-section" id="question1">
             <h2 id="question1Text"></h2>
-            <button class="cute-btn" onclick="moveButton(this)" id="yesBtn1"></button>
+            <button class="cute-btn" onclick="showNextQuestion(2)" id="yesBtn1"></button>
             <button class="cute-btn" onclick="moveButton(this)" id="noBtn1"></button>
             <!-- CUSTOMIZE: Secret answer text -->
             <div class="secret-answer">
@@ -65,6 +65,10 @@
         <div class="celebration hidden" id="celebration">
             <h2 id="celebrationTitle"></h2>
             <p class="celebration-text" id="celebrationMessage"></p>
+            <div class="location-surprise">
+                <p class="location-text" id="locationText"></p>
+                <img id="locationImage" class="location-image" alt="Surprise location">
+            </div>
             <p class="celebration-text" id="celebrationEmojis"></p>
         </div>
     </div>

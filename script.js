@@ -179,10 +179,18 @@ function celebrate() {
     const celebration = document.getElementById('celebration');
     celebration.classList.remove('hidden');
     
+    // Hide floating elements during celebration
+    document.querySelector('.floating-elements').style.display = 'none';
+    
     // Set celebration messages
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
     document.getElementById('celebrationMessage').textContent = config.celebration.message;
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
+    
+    // Set location surprise
+    document.getElementById('locationText').textContent = config.celebration.locationText;
+    const locationImg = document.getElementById('locationImage');
+    locationImg.src = config.celebration.locationImage;
     
     // Create heart explosion effect
     createHeartExplosion();
